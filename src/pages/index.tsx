@@ -102,7 +102,7 @@ export const AppPageQuery = graphql`
         author
       }
     }
-    Dor: file(name: { eq: "Dor"}) {
+    dor: file(name: { eq: "Dor"}) {
       childImageSharp {
         fluid(maxWidth: 540) {
           ...GatsbyImageSharpFluid
