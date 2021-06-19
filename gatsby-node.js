@@ -3,7 +3,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const result = await graphql(`
     {
-      cv: file(name: { eq: "Aaron_Osher_CV_Public" }) {
+      cv: file(name: { eq: "Dor_Lasri_Resume" }) {
         publicURL
       }
     }

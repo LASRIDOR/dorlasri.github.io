@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Aaron Osher`,
+    title: `Dor Lasri`,
     description: `Student, Developer, Creator`,
-    author: `@aaronosher`,
+    author: `@dorlasri`,
   },
   plugins: [
     `gatsby-plugin-mdx`,
@@ -35,8 +35,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Aaron Osher's Website`,
-        short_name: `Aaron Osher`,
+        name: `Dor Lasri's Website`,
+        short_name: `Dor Lasri`,
         start_url: `/`,
         background_color: `#555555`,
         theme_color: `#4d4d4d`,

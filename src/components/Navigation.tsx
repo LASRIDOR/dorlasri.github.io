@@ -8,7 +8,7 @@ import {
 const Navigation: React.FC = () => {
   const cv = useStaticQuery<{file: { publicURL: string; } }>(graphql`
     query CVQuery {
-      file(name: {eq: "Aaron_Osher_CV_Public"}) {
+      file(name: {eq: "Dor_Lasri_Resume"}) {
         publicURL
       }
     }

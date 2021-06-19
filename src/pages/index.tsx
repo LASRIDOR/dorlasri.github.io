@@ -28,7 +28,7 @@ interface AppPageProps {
         author: string;
       }
     }
-    aaron: {
+    dor: {
       childImageSharp: {
         fluid: FluidObject
       }
@@ -43,24 +43,25 @@ const App: React.FC<AppPageProps> = ({ data }) => {
       <div className={container}>
         <div className={portraitContainer}>
           <Img
-            fluid={data.aaron.childImageSharp.fluid}
+            fluid={data.dor.childImageSharp.fluid}
             className={portrait}
-            alt="Portrait of Aaron"
+            alt="Portrait of Dor"
           />
         </div>
         <Greeting />
+        I study computer science at the Academic College of Tel Aviv , am the organizer of MTA Hack , working at WSC - Sports , and volunteer at LATET .
         <div className={bio}>
           I study computer science at the{" "}
-          <Link href="https://cs.nott.ac.uk">University of Nottingham</Link>, am
-          the president of{" "}
-          <Link href="https://hacksocnotts.co.uk">HackSoc</Link>, a Coach at{" "}
-          <Link href="https://mlh.io/eu">Major League Hacking</Link>, and
-          co-founder of{" "}
-          <Link href="https://hackathons.org.uk">Hackathons UK</Link>.
+          <Link href="https://www.mta.ac.il/he-il/">Academic College of Tel Aviv</Link>
+          , am the organizer of{" "}
+          <Link href="https://mtahack.com/">MTA Hack</Link>, working at{" "}
+          <Link href="https://wsc-sports.com/">WSC - Sports</Link>, and
+          volunteer at{" "}
+          <Link href="https://www.latet.org.il/">LATET</Link>.
         </div>
 
         <div className={brandButtons}>
-          <Link href="https://linkedin.com/in/aaronosher">
+          <Link href="https://www.linkedin.com/in/dor-lasri-ab6703160/">
             <FontAwesomeIcon
               icon={faLinkedinIn}
               color="black"
@@ -68,7 +69,7 @@ const App: React.FC<AppPageProps> = ({ data }) => {
               size="2x"
             />
           </Link>
-          <Link href="https://twitter.com/aaronosher">
+          <Link href="#">
             <FontAwesomeIcon
               icon={faTwitter}
               color="black"
@@ -76,7 +77,7 @@ const App: React.FC<AppPageProps> = ({ data }) => {
               size="2x"
             />
           </Link>
-          <Link href="https://github.com/aaronosher">
+          <Link href="https://github.com/LASRIDOR">
             <FontAwesomeIcon
               icon={faGithub}
               color="black"
@@ -101,7 +102,7 @@ export const AppPageQuery = graphql`
         author
       }
     }
-    aaron: file(name: { eq: "Aaron"}) {
+    Dor: file(name: { eq: "Dor"}) {
       childImageSharp {
         fluid(maxWidth: 540) {
           ...GatsbyImageSharpFluid
