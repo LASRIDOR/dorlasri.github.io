@@ -16,7 +16,7 @@ export interface GrettingState {
 
 export default class Greeting extends Component<GreetingProps, GrettingState> {
   static defaultProps = {
-    children: "Hi, I'm Aaron. 👋",
+    children: "Hi, I'm Dor. 👋",
   };
 
   constructor(props: GreetingProps) {

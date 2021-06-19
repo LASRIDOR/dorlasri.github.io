@@ -49,7 +49,6 @@ const App: React.FC<AppPageProps> = ({ data }) => {
           />
         </div>
         <Greeting />
-        I study computer science at the Academic College of Tel Aviv , am the organizer of MTA Hack , working at WSC - Sports , and volunteer at LATET .
         <div className={bio}>
           I study computer science at the{" "}
           <Link href="https://www.mta.ac.il/he-il/">Academic College of Tel Aviv</Link>
